@@ -1,5 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:recipe_app_study/components/recipe_menu.dart';
+import 'package:recipe_app_study/components/recipe_menu_icon.dart';
+import 'package:recipe_app_study/components/recipe_title.dart';
 
 // 페이지를 만든것이다.
 // package:flutter/material.dart'; 를 임포트
@@ -19,11 +22,9 @@ class RecipePage extends StatelessWidget {
         child: ListView(
           children: [
             // fontFamily << 폰트설정이지만 단일 개체에만 적용됨 (다수 적용에 테마를 사용)
-            Padding(
-              // Text를 감싼 Padding
-              padding: const EdgeInsets.only(top: 20),
-              child: Text("Recipes", style: TextStyle(fontSize: 30)),
-            ),
+            RecipeTitle("Recipes"),
+            SizedBox(height: 10),
+            RecipeMenu(),
           ],
         ),
       ),
