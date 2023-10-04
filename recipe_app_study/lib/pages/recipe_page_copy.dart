@@ -1,8 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-class RecipePage extends StatelessWidget {
-  RecipePage({super.key});
+class RecipePageCopy extends StatelessWidget {
+  RecipePageCopy({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,28 +10,47 @@ class RecipePage extends StatelessWidget {
       appBar: _appBar(),
       body: Container(
         constraints: BoxConstraints(
-          minWidth: double.infinity,
+          minWidth: 10,
           maxWidth: double.infinity,
-          minHeight: double.infinity,
+          minHeight: 10,
           maxHeight: double.infinity,
         ),
         decoration: BoxDecoration(
           border: Border.all(),
         ),
-        child: Container(
-          width: 50,
-          height: 30,
-          color: Colors.red,
-          constraints: BoxConstraints(
-            minWidth: 50,
-            maxWidth: 50,
-            minHeight: 50,
-            maxHeight: 50,
-          ),
-          child: SizedBox(
-            width: 30,
-            height: 30,
-            // color: Colors.blue,
+        child: Center(
+          child: Container(
+            color: Colors.blue,
+            constraints: BoxConstraints(
+              minWidth: 0,
+              maxWidth: 300,
+              minHeight: 0,
+              maxHeight: 100,
+            ),
+            child: SizedBox(
+              height: 100,
+              width: 200,
+              child: Center(
+                child: Container(
+                  constraints: BoxConstraints(
+                    minWidth: 75,
+                    maxWidth: 75,
+                    minHeight: 75,
+                    maxHeight: 75,
+                  ),
+                  width: 50,
+                  height: 150,
+                  color: Colors.amber,
+                  child: Center(
+                    child: Container(
+                      color: Colors.black,
+                      width: 25,
+                      height: 25,
+                    ),
+                  ),
+                ),
+              ),
+            ),
           ),
         ),
       ),

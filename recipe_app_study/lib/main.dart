@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:recipe_app_study/pages/recipe_page.dart';
+import 'package:recipe_app_study/pages/recipe_page_copy.dart';
 
 void main() {
   runApp(MyApp());
@@ -19,7 +20,7 @@ class MyApp extends StatelessWidget {
 
       // RecipePage << AppBar 페이지
       // 화면 1개마다 class를 만든다.
-      home: RecipePage(),
+      home: RecipePageCopy(),
     );
   }
 }
