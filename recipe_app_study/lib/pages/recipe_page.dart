@@ -1,13 +1,19 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:recipe_app_study/components/recipe_menu.dart';
-import 'package:recipe_app_study/components/recipe_menu_icon.dart';
-import 'package:recipe_app_study/components/recipe_title.dart';
+
+import '../components/recipe_list_item.dart';
+import '../components/recipe_menu.dart';
+import '../components/recipe_title.dart';
 
 // 페이지를 만든것이다.
 // package:flutter/material.dart'; 를 임포트
 class RecipePage extends StatelessWidget {
   RecipePage({super.key});
+
+  // fetch 함수로 데이터를 받았을때 밑에서 map으로 뿌린다.
+  // List<String> fetch() {
+  //   return ["coffee", "burger", "pizza"];
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -19,12 +25,22 @@ class RecipePage extends StatelessWidget {
       body: Padding(
         // ListView를 감싼 Padding (지정하고 Alt+Enter)
         padding: const EdgeInsets.symmetric(horizontal: 20),
+        // ListView면 스크롤이 생기지만, Column이면 화면을 넘기지 않음
+        // ListView면 하위 요소의 가로 끝까지 범위가 잡힌다.
+        // Column이면 하위 요소 크기만큼 범위가 잡히고, 가운데 정렬이 된다.
+        // 이들의 하위 속성은 부모(ListView, Column등)의 제약조건을 따른다.
         child: ListView(
           children: [
             // fontFamily << 폰트설정이지만 단일 개체에만 적용됨 (다수 적용에 테마를 사용)
             RecipeTitle("Recipes"),
             SizedBox(height: 10),
             RecipeMenu(),
+            // RecipeListItem()에서 달라야하는것 Name, title, padding << 매개변수로준다.
+            RecipeListItem(imageName: "coffee", title: "coffee"),
+            RecipeListItem(imageName: "burger", title: "burger"),
+            RecipeListItem(imageName: "pizza", title: "pizza"),
+            // fetch로 받은 List를 Stream의 map을 써서 뽑아내는 방법
+            // fetch().map((e) => RecipeListItem(imageName: e, title: title)).toList(),
           ],
         ),
       ),
