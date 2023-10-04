@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 
       // RecipePage << AppBar 페이지
       // 화면 1개마다 class를 만든다.
-      home: RecipePageCopy(),
+      home: RecipePage(),
     );
   }
 }
