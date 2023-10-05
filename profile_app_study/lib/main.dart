@@ -55,7 +55,7 @@ class ProfilePage extends StatelessWidget {
         leading: Icon(
           Icons.back_hand,
         ),
-        title: Text("안녕"),
+        title: Text("잘가"),
       ),
       body: Center(
         child: Text("hello World"),
