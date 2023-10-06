@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:login_app_study/pages/home_page.dart';
+import 'package:login_app_study/pages/join_page.dart';
 import 'package:login_app_study/pages/login_page.dart';
 
 void main() {
@@ -17,10 +18,11 @@ class MyApp extends StatelessWidget {
       // buildThemeData() << 버튼의 테마를 지정
       theme: buildThemeData(),
       // initialRoute << Body가 없는 대신 처음 접속하면 나오는 화면지정
-      initialRoute: "/login",
+      initialRoute: "/join",
       routes: {
         "/login": (context) => LoginPage(),
         "/home": (context) => HomePage(),
+        "/join": (context) => JoinPage(),
       },
     );
   }

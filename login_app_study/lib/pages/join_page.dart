@@ -2,12 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:login_app_study/size.dart';
 
+import '../components/custom_join_form.dart';
 import '../components/custom_login_form.dart';
 import '../components/custom_text_form_field.dart';
 import '../components/logo.dart';
 
-class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+class JoinPage extends StatelessWidget {
+  const JoinPage({super.key});
 
   // LoginPage 클래스가 열리면 build메서드가 자동으로 실행된다.
   // 이때 트리구조를 이해하는것이 중요하다.
@@ -25,9 +26,9 @@ class LoginPage extends StatelessWidget {
         child: ListView(
           children: [
             SizedBox(height: xlarge_gap),
-            Logo("login"),
+            Logo("join"),
             // Form << Html의 Form태그와 같다. (데이터 전송 가능)
-            CustomLoginForm(),
+            CustomJoinForm(),
           ],
         ),
       ),
