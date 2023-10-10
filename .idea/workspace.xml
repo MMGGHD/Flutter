@@ -4,14 +4,28 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a3cbbb8-7fc6-4899-835c-9b64b59fedbd" name="Changes" comment="" />
+    <list default="true" id="5a3cbbb8-7fc6-4899-835c-9b64b59fedbd" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/pre_shoppingcart_app/lib/main_copy.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/assets/p1.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/assets/p2.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/assets/p3.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/assets/p4.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/lib/components/shoppingcart_detail.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/lib/components/shoppingcart_header.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/lib/constants.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shoppingcart_app_stuby/lib/theme.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter" beforeDir="false" afterPath="$PROJECT_DIR$/flutter" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/flutter/packages/flutter/lib/src/material/colors.dart" beforeDir="false" afterPath="$PROJECT_DIR$/flutter/packages/flutter/lib/src/material/colors.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/flutter" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2VxmalUEFCk03awSRbKpgwcMlCk" />
   <component name="ProjectViewState">
@@ -25,7 +39,7 @@
     "RunOnceActivity.cidr.known.project.marker": "true",
     "cidr.known.project.marker": "true",
     "dart.analysis.tool.window.visible": "false",
-    "last_opened_file_path": "C:/src/workspace",
+    "last_opened_file_path": "C:/src",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
