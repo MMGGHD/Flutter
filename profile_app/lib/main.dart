@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:profile_app/pages/profile_page_copy.dart';
 import 'package:profile_app/theme.dart';
 
 import 'pages/profile_page.dart';
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       theme: theme(),
       // home안에 ProfilePage, 안에 Scafford()
-      home: ProfilePage(),
+      home: ProfilePageCopy(),
     );
   }
 }

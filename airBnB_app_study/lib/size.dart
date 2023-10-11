@@ -1,0 +1,16 @@
+import 'package:flutter/material.dart';
+
+// 간격
+const double gap_xl = 40;
+const double gap_l = 30;
+const double gap_m = 20;
+const double gap_s = 10;
+const double gap_xs = 5;
+
+// 높이
+const double header_height = 620;
+
+// MediaQuery를 통해 Context의 Width를 받아오는 함수
+double getBodyWidth(BuildContext context) {
+  return MediaQuery.of(context).size.width * 0.7;
+}

@@ -50,7 +50,7 @@ class ShoppingCartDetail extends StatelessWidget {
   }
 
   Widget _buildDetailRatingAndReviewCount() {
-    return Padding(
+    return const Padding(
       padding: EdgeInsets.only(bottom: 20),
       child: Row(
         children: [
