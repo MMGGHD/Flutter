@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 class HomeBodyPopular extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
     return Padding(
       padding: const EdgeInsets.only(top: gap_m),
       child: Column(
@@ -22,14 +23,17 @@ class HomeBodyPopular extends StatelessWidget {
   }
 
   _buildPopularList() {
-    return Wrap(
-      children: [
-        HomeBodyPopularItem(id: 0),
-        SizedBox(width: 7.5),
-        HomeBodyPopularItem(id: 1),
-        SizedBox(width: 7.5),
-        HomeBodyPopularItem(id: 2),
-      ],
+    return Container(
+      constraints: BoxConstraints(minWidth: double.infinity),
+      child: Wrap(
+        children: [
+          HomeBodyPopularItem(id: 0),
+          SizedBox(width: 7.5),
+          HomeBodyPopularItem(id: 1),
+          SizedBox(width: 7.5),
+          HomeBodyPopularItem(id: 2),
+        ],
+      ),
     );
   }
 }
