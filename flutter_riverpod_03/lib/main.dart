@@ -22,7 +22,7 @@ class Model {
 }
 
 // 2. StateNotifierProvider << 상태 + 변화시킬수 있는 메서드를 가지고있어야함
-// StateNotifier<>를 상속하고, 제네릭은 보유한 창고 데이터 객체타입
+// StateNotifier<>를 상속하고, 제네릭을 보유한 창고 데이터 객체타입
 class ViewModel extends StateNotifier<Model?> {
   // 창고 데이터는 상태값이 아니다.
   // 이걸 부모 state변수에 super로 전달해야 상태값이 된다.
